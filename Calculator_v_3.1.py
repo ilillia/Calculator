@@ -1,3 +1,5 @@
+from string import whitespace
+
 def output_function(entry_value):
     try:
         f_n = entry_value['first_number']
@@ -36,6 +38,7 @@ def input_values():
             returned_values = {}
             first_number  = float(input('Enter First Number >>> '))
             type_of_operation  = input('Enter Base Function >>> ')
+            type_of_operation  = type_of_operation.replace(' ', '')
 
             if type_of_operation not in ('+' ,'-' ,'*' ,'/'):
                 print('Error: unknown function')
