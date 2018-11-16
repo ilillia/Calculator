@@ -64,7 +64,6 @@ def input_values():
             break
 
 def main():
-    list_of_operation = ('+' ,'-' ,'*' ,'/')
 
     print()
     print('Base functions :  +  ,  -  ,  * ')
